@@ -1,0 +1,15 @@
+2023-12-09 16:39:06.062 [info] Deleted uninstalled extension from disk vadimcn.vscode-lldb /home/archuser/.vscode-oss/extensions/vadimcn.vscode-lldb-1.10.0-universal
+2023-12-09 16:39:17.030 [info] Getting Manifest... vadimcn.vscode-lldb
+2023-12-09 16:39:17.749 [info] Installing extension: vadimcn.vscode-lldb
+2023-12-09 16:39:18.018 [info] Extension signature verification is not done: vadimcn.vscode-lldb
+2023-12-09 16:39:18.051 [info] Extracted extension to file:///home/archuser/.vscode-oss/extensions/vadimcn.vscode-lldb-1.10.0-universal: vadimcn.vscode-lldb
+2023-12-09 16:39:18.067 [info] Renamed to /home/archuser/.vscode-oss/extensions/vadimcn.vscode-lldb-1.10.0-universal
+2023-12-09 16:39:18.070 [info] Extracting extension completed. vadimcn.vscode-lldb
+2023-12-09 16:39:18.092 [info] Extension installed successfully: vadimcn.vscode-lldb
+2023-12-09 16:39:18.157 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/archuser/.vscode-oss/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/archuser/.vscode-oss/extensions/extensions.json.vsctmp'
+    at r.create (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30056)
+    at a (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30170)
+    at s.fb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:36175)
+    at s.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:28621)
+    at async E.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:15732)
+    at async Y.tb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:100:111319)

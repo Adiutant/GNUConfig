@@ -231,4 +231,4 @@ font pango: monospace 0.001
 titlebar_padding 5
 titlebar_border_thickness 0
 bindsym $mod+Print exec $screenshot
-exec swaymsg output Virtual-1 mode 1920x1080@60Hz position 0 0
+exec_always swaymsg output Virtual-1 mode 1920x1080@60Hz position 0 0
