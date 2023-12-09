@@ -3,7 +3,7 @@ import re
 regex = r'bindsym (\$[\w\+]+) ([\w \$]+)'
 
 regex_mod = r'set \$mod (\w+)'
-config = open("config", 'r')
+config = open("/home/archuser/.config/sway/config", 'r')
 data = config.read()
 mod = re.finditer(regex_mod, data, re.MULTILINE)
 matches = re.finditer(regex, data, re.MULTILINE)

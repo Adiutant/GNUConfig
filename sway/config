@@ -235,3 +235,4 @@ titlebar_padding 5
 titlebar_border_thickness 0
 bindsym $mod+Print exec $screenshot
 exec_always swaymsg output Virtual-1 mode 1920x1080@60Hz position 0 0
+bindsym $mod+Alt+h exec alacritty --hold -e python ~/.config/sway/hotkeys.py
