@@ -78,7 +78,7 @@ output * background /home/archuser/wallhaven-ex9gwo.png fill
     # Despite the name, also works for non-floating windows.
     # Change normal to inverse to use left mouse button for resizing and right
     # mouse button for dragging.
-    floating_modifier $mod normal
+    floating_modifier Alt normal
 
     # Reload the configuration file
     bindsym $mod+Shift+c reload
@@ -220,10 +220,13 @@ bindsym $mod+r mode "resize"
 #}
 exec_always ~/.config/waybar/waybar.sh
 include /usr/local/etc/sway/config.d/*
-bindsym $mod+Shift+b exec MOZ_ENABLE_WAYLAND=1 flatpak --user run ru.yandex.Browser 
-bindsym $mod+Shift+i exec MOZ_ENABLE_WAYLAND=1 flatpak --user run org.kde.kdevelop
+set $browser MOZ_ENABLE_WAYLAND=1 flatpak --user run ru.yandex.Browser
+set $ide MOZ_ENABLE_WAYLAND=1 flatpak --user run org.kde.kdevelop
+bindsym $mod+Shift+b exec $browser 
+bindsym $mod+Shift+i exec $ide
 exec swayidle -w timeout 350 'swaylock -f -c 000000' timeout 650 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' before-sleep 'swaylock -f -c 000000'
-bindsym $mod+Shift+p exec ~/.config/sway/lock.sh
+set $lock_screen  ~/.config/sway/lock.sh
+bindsym $mod+Shift+p exec $lock_screen
 set $opacity 0.85
 for_window [class=".*"] opacity $opacity
 for_window [app_id=".*"] opacity $opacity
