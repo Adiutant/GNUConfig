@@ -25,7 +25,7 @@ set $menu exec alacritty -e sway-launcher-desktop
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/local/share/backgrounds/sway/)
-output * background /home/archuser/wallhaven-ex9gwo.png fill
+output * background ~/.config/sway/wallpapers.png fill
 #
 # Example configuration:
 #
